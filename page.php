@@ -8,6 +8,7 @@
 
 	<!-- Featured Image -->
 	<div class="sub-nav-wrap full-width-nav">
+		If we're on a University page, the subnav should print here.
 		<?php include 'sub-nav.php'; ?>
 	</div>
 

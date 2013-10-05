@@ -1,38 +1,8 @@
 <?php
 
 // if Practice (or practice section)
-if(is_page()) {
-	switch ($post->ID) {
-		case 6:
-			$menuName = 'about us';
-			break;
-		case 74:
-			$menuName = 'hire mark jewell';
-			break;
-		case 66:
-			$menuName = 'training events';
-			break;
-		case 96:
-			$menuName = 'the institute';
-		case 67:
-			$menuName = 'attendees';
-	}
-	
-	switch ($post->post_parent) {
-		case 6:
-			$menuName = 'about us';
-			break;
-		case 74:
-			$menuName = 'hire mark jewell';
-			break;
-		case 66:
-			$menuName = 'training events';
-			break;
-		case 96:
-			$menuName = 'the institute';
-		case 67:
-			$menuName = 'attendees';
-	}
+if(is_page() && ($post->ID==4 || $post->post_parent==4)) {
+	$menuName = 'Universities';
 }
 
 // print menu
