@@ -77,25 +77,8 @@ function iut_nav()
 	);
 }
 
-// iUT Sitemap
-function iut_sitemap()
-{
-    wp_nav_menu(
-    array(
-        'theme_location'  => 'footer-sitemap',
-        'container'       => false, 
-        'menu_class'      => 'site-sitemap', 
-        'echo'            => true,
-        'fallback_cb'     => 'wp_page_menu',
-        'after'           => '<a class="sub-menu-toggle" href="#"><span class="up">▲</span><span class="down">▼</span></a>',
-        'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
-        )
-    );
-}
-
-
-// ESPI Footer Site Links
-function espi_site_links()
+// iUT Footer Site Links
+function iut_site_links()
 {
     wp_nav_menu(
     array(

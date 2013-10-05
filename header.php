@@ -66,7 +66,7 @@
 
 					<!-- nav -->
 					<nav class="site-nav-wrap" role="navigation">
-						<?php espi_nav(); ?>
+						<?php iut_nav(); ?>
 					</nav>
 					<!-- /nav -->
 			
