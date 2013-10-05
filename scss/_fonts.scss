@@ -1,0 +1,58 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url($fontPath + 'icomoon.eot');
+	src:url($fontPath + 'icomoon.eot?#iefix') format('embedded-opentype'),
+		url($fontPath + 'icomoon.woff') format('woff'),
+		url($fontPath + 'icomoon.ttf') format('truetype'),
+		url($fontPath + 'icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/*
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+*/
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-mail, .icon-phone, .icon-menu, .icon-search, .icon-apple, .icon-android, .icon-vimeo, .icon-twitter, .icon-facebook, .icon-linkedin, .icon-pinterest, .icon-googleplus, .icon-tumblr, .icon-dribbble, .icon-youtube, .icon-youtube-2, .icon-x {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-mail:before { content: "\e000"; }
+.icon-phone:before { content: "\e001"; }
+.icon-menu:before { content: "\e002"; }
+.icon-search:before { content: "\e003"; }
+.icon-apple:before { content: "\e008"; }
+.icon-android:before { content: "\e009"; }
+.icon-vimeo:before { content: "\e00a"; }
+.icon-twitter:before { content: "\e00b"; }
+.icon-facebook:before { content: "\e00c"; }
+.icon-linkedin:before { content: "\e00d"; }
+.icon-pinterest:before { content: "\e004"; }
+.icon-googleplus:before { content: "\e005"; }
+.icon-tumblr:before { content: "\e006"; }
+.icon-dribbble:before { content: "\e007"; }
+.icon-youtube:before { content: "\e00e"; }
+.icon-youtube-2:before { content: "\e00f"; }
+.icon-x:before { content: "\e011"; }

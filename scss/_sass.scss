@@ -1,0 +1,56 @@
+// Paths
+$imgPath: '../img/';
+$fontPath: '../fonts/';
+
+// Fonts
+$defaultFontStack: 'Varela Round', sans-serif;
+
+// Colors
+$espiPink: #ec068d;		// e9008c
+$espiOrange: #f35c22;
+$espiGreen: #f15d22;
+$espiTurquoise: #004f5a;
+$espiRed: #de2323;
+$espiPurple: #6e489b;
+$espiLime: #89c81b;
+$espiBlue: #2ba9cf;
+$espiGray: #969696;
+$espiYellow: #edde23;
+$compPink: #ec068d;
+
+$lightGray: #dfdfdf;
+$textColor: $espiGray;
+$linkColor: $espiPink;
+$linkHoverColor: darken($compPink,5%);
+
+// Widths
+$maxWidth: 93.75%;
+$maxWidthMargin: 3.125%;
+$colPad: 0.625em;
+$borderRadius: 0.375em;
+
+
+// Mix-ins
+@mixin at-least($width) {
+	@media screen and (min-width: $width/16 + em) { @content; }
+}
+@mixin at-most($width) {
+	@media screen and (max-width: $width/16 + em) { @content; }
+}
+@mixin at-min-max($min,$max) {
+	@media screen and (min-width: $min/16 + em) and (max-width: $max/16 + em) { @content; }
+}
+
+$baseFontSize: 16;
+@mixin font-size($size: 16) {
+	font-size: ($size * $baseFontSize) + px;
+	font-size: $size + rem;
+}
+
+// style placehold text
+@mixin placeholder {
+	&::-webkit-input-placeholder { @content; }
+	&:-moz-placeholder { @content; }	/* Firefox 18- */
+	&::-moz-placeholder { @content; }	/* Firefox 19+ */
+	&:-ms-input-placeholder { @content; }
+}
